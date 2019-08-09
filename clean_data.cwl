@@ -1,7 +1,7 @@
 #!/usr/bin/env cwl-runner
 cwlVersion: v1.0
 class: CommandLineTool
-baseCommand: ["python3", "data_cleaning.py"]
+baseCommand: ["data_cleaning.py"]
 
 requirements:
 - class: ShellCommandRequirement
@@ -16,5 +16,6 @@ inputs:
       position: 1
 outputs:
   answer:
-    type: stdout
-stdout: clean.csv
+    type: File
+    outputBinding:
+      glob: clean.csv

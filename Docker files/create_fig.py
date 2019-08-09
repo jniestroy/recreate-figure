@@ -1,4 +1,4 @@
-import click
+#!/usr/bin/python3
 import json
 import pandas as pd
 import matplotlib.pyplot as plt

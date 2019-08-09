@@ -4,8 +4,10 @@ cwlVersion: v1.0
 class: Workflow
 
 requirements:
-  DockerRequirement:
-    dockerPull: jniestroy/recreate-figure
+- class: InlineJavascriptRequirement
+- class: ShellCommandRequirement
+- class:  DockerRequirement
+  dockerPull: jniestroy/recreate-figure
 
 inputs:
   input_data:
@@ -16,6 +18,7 @@ outputs:
   final_figure:
     type: File
     outputSource: create_fig/figure
+
 
 
 steps:

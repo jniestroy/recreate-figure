@@ -1,7 +1,7 @@
 #!/usr/bin/env cwl-runner
 cwlVersion: v1.0
 class: CommandLineTool
-baseCommand: ["python3", "create_fig.py"]
+baseCommand: ["create_fig.py"]
 
 inputs:
   clean:

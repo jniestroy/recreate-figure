@@ -1,6 +1,3 @@
-file:
+input_data:
   class: File
-  path: /Users/justinniestroy-admin/Documents/Work/recreate-figure/moss_plos_one_data.csv
-cleaning_script:
-  class: File
-  path: /Users/justinniestroy-admin/Documents/Work/recreate-figure/data_cleaning.py
+  path: /Users/justinniestroy-admin/Documents/Work/recreate-figure/sample.csv

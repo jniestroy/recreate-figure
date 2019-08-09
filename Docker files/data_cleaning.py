@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import click
 import json
 import pandas as pd
@@ -11,11 +12,12 @@ from io import StringIO
 #@click.argument('file')
 def data_cleaning(file):
     file = file[1]
-    data = pd.read_csv(file,engine='python')
+    data = pd.read_csv(file)
     fig_df = data.iloc[:,[17,20,47,52]]
-    s = StringIO()
-    fig_df.to_csv(s)
-    click.echo(s.getvalue())
+    fig_df.to_csv('clean.csv')
+    # s = StringIO()
+    # fig_df.to_csv(s)
+    # click.echo(s.getvalue())
 
 
 if __name__ == '__main__':
