@@ -3,11 +3,9 @@
 cwlVersion: v1.0
 class: Workflow
 
-
 inputs:
   input_data:
     type: File
-
 
 outputs:
   final_figure:
